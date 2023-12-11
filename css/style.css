@@ -165,7 +165,7 @@ footer .suscripcion h2 {
 
 /*!----LIBROS-----*/
 
-/*!----LIBROS-hero-----*/
+/*!----SECCION 1: HERO-----*/
 
 .libros-hero h1 {
   font-size: 60px;
@@ -312,7 +312,8 @@ footer .suscripcion h2 {
 .agenda-hero div {
   background-color: rgb(233, 232, 232);
   text-align: center;
-  height: 350px;
+  height: 336px;
+  width: 50%;
 }
 
 .agenda-hero div h2 {
@@ -338,46 +339,49 @@ footer .suscripcion h2 {
 }
 
 .agenda-hero div img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 .agenda-galeria-contenedor {
-  margin: 30px 60px 30px 60px;
+  margin: 30px 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 450px;
   gap: 40px;
-  width: 50%;
 }
 
 .agenda-galeria-contenedor-item {
   background-color: #2a9d8f;
   color: white;
 }
-
 .agenda-galeria-contenedor-item img {
-  height: 270px;
-  object-fit: cover;
+  width: 100%;
+}
+
+.agenda-galeria-contenedor-item-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .agenda-galeria-contenedor-item-texto h3 {
-  text-align: center;
   font-size: 18px;
+  text-align: center;
 }
 
 .agenda-galeria-contenedor-item-texto h2 {
-  text-align: center;
   font-size: 24px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .agenda-galeria-contenedor-item-texto p {
+  font-size: 18px;
   text-align: center;
 }
 
 .agenda-galeria-contenedor-item-texto a {
-  text-align: justify;
   text-decoration: none;
   color: white;
 }
@@ -432,6 +436,12 @@ footer .suscripcion h2 {
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .agenda-galeria-contenedor {
+    margin: 30px 60px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 
 @media screen and (max-width: 885px) {
@@ -445,6 +455,14 @@ footer .suscripcion h2 {
 
   .bienvenidos div {
     width: 90%;
+  }
+  .agenda-hero {
+    flex-direction: column;
+  }
+
+  .agenda-hero div {
+    height: 323px;
+    width: 70%;
   }
 }
 
@@ -468,6 +486,17 @@ footer .suscripcion h2 {
 
   .grid-galeria {
     grid-template-columns: 1fr;
+  }
+
+  .agenda-galeria-contenedor {
+    margin: 30px 60px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .agenda-hero div {
+    height: 323px;
+    width: 80%;
   }
 }
 
