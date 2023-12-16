@@ -519,4 +519,11 @@ footer .suscripcion h2 {
     padding: 0px;
     width: 100%;
   }
+  .agenda-hero div {
+    width: 100%;
+  }
+  .agenda-hero div img {
+    height: 50%;
+    object-fit: cover;
+  }
 }
