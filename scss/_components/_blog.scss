@@ -1,0 +1,59 @@
+/*!----1 BLOG HERO-----*/
+.blog-hero {
+  height: 580px;
+  margin: 30px 60px 30px 60px;
+  background-color: rgb(230, 229, 229);
+  @extend %flex-center;
+
+  .blog-hero-text {
+    text-align: center;
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      padding-top: 10px;
+    }
+    p {
+      font-size: 24px;
+      font-style: italic;
+      padding-top: 10px;
+    }
+  }
+  img {
+    height: 70%;
+  }
+}
+/*!----2 GRID GALERIA-----*/
+.grid-galeria {
+  margin: 30px 60px 30px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  gap: 40px;
+  .grid-item {
+    display: flex;
+    background-color: lightpink;
+    color: white;
+    img {
+      width: 55%;
+      object-fit: cover;
+    }
+    .card-text {
+      text-align: center;
+      h2 {
+        font-size: 26px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-style: italic;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding-top: 10px;
+      }
+    }
+  }
+}

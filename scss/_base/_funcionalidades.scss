@@ -1,0 +1,36 @@
+//!VARIABLES
+
+$color-principal: black;
+$color-secundario: #4f000b;
+$color-terciario: white;
+
+//!LISTAS
+
+$font-size: 16px, 18px, 20px, 22px, 24px, 26px, 28px, 30px, 34px, 40px, 50px,
+  60px;
+
+//!OPERACIONES
+
+// $ancho: 720px;
+// img {
+//   width: $ancho / 2;
+// }
+
+//!MAPAS
+
+$boton: (
+  underline-text: none,
+  color-text: white,
+  size-text: nth($font-size, 2),
+  bg-boton: black,
+  pad-boton: 10px,
+);
+
+//!EXTENDS
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

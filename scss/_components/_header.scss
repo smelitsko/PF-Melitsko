@@ -1,0 +1,27 @@
+.nav-color {
+  background-color: #e9c46a;
+}
+
+.nav-link {
+  color: #4f000b;
+  transition-property: background-color;
+  transition-duration: 2s;
+  &:hover {
+    color: white;
+    background-color: $color-secundario;
+  }
+}
+
+.buscador-boton {
+  border: 1px solid #4f000b;
+  color: black;
+  border-radius: 10px;
+  &:hover {
+    background-color: #4f000b;
+    color: white;
+  }
+}
+
+.form-control {
+  border: black;
+}
