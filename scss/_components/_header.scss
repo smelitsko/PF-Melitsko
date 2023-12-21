@@ -1,27 +1,29 @@
 .nav-color {
-  background-color: #e9c46a;
+  background-color: $color-cuaternario;
 }
 
 .nav-link {
-  color: #4f000b;
+  color: $color-secundario;
   transition-property: background-color;
   transition-duration: 2s;
   &:hover {
-    color: white;
+    color: $color-terciario;
     background-color: $color-secundario;
   }
 }
 
 .buscador-boton {
-  border: 1px solid #4f000b;
-  color: black;
+  border: 1px solid $color-secundario;
+  color: $color-principal;
   border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 2s;
   &:hover {
-    background-color: #4f000b;
-    color: white;
+    background-color: $color-secundario;
+    color: $color-terciario;
   }
 }
 
 .form-control {
-  border: black;
+  border: $color-principal;
 }

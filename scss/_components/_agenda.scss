@@ -1,37 +1,42 @@
 .agenda-hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flex(flex, space-around, center, row, wrap);
   div {
     background-color: rgb(233, 232, 232);
     text-align: center;
-    height: 336px;
+    height: 360px;
     width: 50%;
-    h2 {
+    h1 {
       height: 80px;
-      background-color: #264653;
-      color: white;
+      background-color: $color-agenda;
+      color: $color-terciario;
       margin-top: 20px;
-      font-size: 34px;
+      font-size: nth($font-size, 10);
     }
-    h3 {
-      background-color: #264653;
-      color: white;
+    .fecha-y-lugar {
+      background-color: $color-agenda;
+      color: $color-terciario;
       margin-top: 20px;
-      font-size: 28px;
+      font-size: nth($font-size, 7);
     }
     p {
       margin: 10px 30px 10px 30px;
       background-color: rgb(233, 232, 232);
       text-align: center;
-      font-size: 18px;
+      font-size: nth($font-size, 2);
     }
     img {
+      height: auto;
       width: 100%;
     }
   }
 }
 
+h2 {
+  text-align: center;
+  color: $color-agenda;
+  font-size: nth($font-size, 10);
+  margin-top: 20px;
+}
 .agenda-galeria-contenedor {
   margin: 30px 60px;
   display: grid;
@@ -39,34 +44,36 @@
   grid-auto-rows: 450px;
   gap: 40px;
   .agenda-galeria-contenedor-item {
-    background-color: #2a9d8f;
-    color: white;
+    background-color: $color-agenda-light;
+    color: $color-terciario;
   }
 
   img {
     width: 100%;
   }
   .agenda-galeria-contenedor-item-texto {
-    display: flex;
+    // @include flex(flex, center, center, column, wrap);
+    @extend %flex-center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h2 {
-      font-size: 24px;
-      margin-top: 10px;
-      text-align: center;
-    }
     h3 {
-      font-size: 18px;
+      font-size: nth($font-size, 5);
+      text-align: center;
+      color: $color-terciario;
+    }
+    .fecha-y-lugar-galeria {
+      font-size: nth($font-size, 3);
+      color: $color-terciario;
       text-align: center;
     }
     p {
-      font-size: 18px;
+      font-size: nth($font-size, 1);
       text-align: center;
+      color: $color-terciario;
     }
     a {
+      font-size: nth($font-size, 2);
       text-decoration: none;
-      color: white;
+      color: $color-terciario;
       text-align: center;
     }
   }

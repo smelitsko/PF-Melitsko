@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Libre+Franklin&family=Montserrat:wght@100&family=Oswald:wght@300&family=Roboto:wght@300&display=swap");
-.blog-hero {
+.bienvenidos, .productos .productos-contenedor div, .blog-hero, .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto, .suscripcion {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -26,7 +26,9 @@
 .buscador-boton {
   border: 1px solid #4f000b;
   color: black;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 2s; }
   .buscador-boton:hover {
     background-color: #4f000b;
     color: white; }
@@ -41,13 +43,9 @@
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  color: white; }
+  background-attachment: fixed; }
 
 .bienvenidos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px; }
   .bienvenidos img {
     height: 500px; }
@@ -62,12 +60,14 @@
 
 .nosotros {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  direction: column;
+  flex-wrap: wrap; }
   .nosotros .nuestra-historia {
     display: flex;
     flex-direction: column;
-    background-color: #e9c469;
+    background-color: #e9c46a;
     width: 80%;
     padding: 30px;
     align-items: center; }
@@ -75,14 +75,19 @@
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
-    background-color: #e9c469;
+    justify-content: center;
+    align-items: center;
+    direction: column;
+    flex-wrap: wrap;
+    background-color: #e9c46a;
     width: 80%;
-    padding: 30px;
-    align-items: center; }
+    padding: 30px; }
     .nosotros .quienes-somos .contenedor-imagenes {
       display: flex;
-      justify-content: space-evenly; }
+      justify-content: center;
+      align-items: center;
+      direction: row;
+      flex-wrap: wrap; }
       .nosotros .quienes-somos .contenedor-imagenes img {
         height: 400px;
         width: 300px;
@@ -100,13 +105,14 @@ main i {
 
 /*!----1 - HERO-----*/
 .libros-hero {
-  height: 580px;
-  margin: 30px 60px;
   display: flex;
-  background-color: #f4a261;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column; }
+  direction: column;
+  flex-wrap: wrap;
+  height: 580px;
+  margin: 30px 60px;
+  background-color: #f4a261; }
   .libros-hero h1 {
     font-size: 60px;
     padding-top: 10px;
@@ -130,22 +136,27 @@ main i {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  direction: row;
   flex-wrap: wrap; }
   .productos .productos-contenedor div {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     background-color: #ffdc85;
     width: 250px;
     height: 370px;
-    margin: 20px; }
+    margin: 20px;
+    box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75); }
     .productos .productos-contenedor div img {
       height: 280px;
       width: 70%;
       padding: 10px;
       object-fit: contain; }
-    .productos .productos-contenedor div h3 {
+      .productos .productos-contenedor div img:hover {
+        box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 27px -6px rgba(0, 0, 0, 0.75); }
+    .productos .productos-contenedor div p {
       font-size: 18px; }
     .productos .productos-contenedor div a {
       text-decoration: none;
@@ -164,11 +175,15 @@ main i {
     .blog-hero .blog-hero-text h1 {
       font-size: 60px; }
     .blog-hero .blog-hero-text h2 {
+      font-size: 40px;
       padding-top: 10px; }
     .blog-hero .blog-hero-text p {
       font-size: 24px;
       font-style: italic;
       padding-top: 10px; }
+    .blog-hero .blog-hero-text .fecha-y-autor {
+      font-size: 28px;
+      font-style: normal; }
   .blog-hero img {
     height: 70%; }
 
@@ -189,11 +204,17 @@ main i {
     .grid-galeria .grid-item .card-text {
       text-align: center; }
       .grid-galeria .grid-item .card-text h2 {
-        font-size: 26px; }
+        font-size: 20px;
+        color: white; }
       .grid-galeria .grid-item .card-text h3 {
-        font-size: 20px; }
+        font-size: 26px;
+        color: white; }
       .grid-galeria .grid-item .card-text p {
-        font-style: italic; }
+        font-style: italic;
+        font-size: 16px; }
+      .grid-galeria .grid-item .card-text .fecha-y-autor {
+        font-style: normal;
+        font-size: 18px; }
       .grid-galeria .grid-item .card-text a {
         text-decoration: none;
         color: white;
@@ -202,19 +223,21 @@ main i {
 .agenda-hero {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  direction: row;
+  flex-wrap: wrap; }
   .agenda-hero div {
     background-color: #e9e8e8;
     text-align: center;
-    height: 336px;
+    height: 360px;
     width: 50%; }
-    .agenda-hero div h2 {
+    .agenda-hero div h1 {
       height: 80px;
       background-color: #264653;
       color: white;
       margin-top: 20px;
-      font-size: 34px; }
-    .agenda-hero div h3 {
+      font-size: 40px; }
+    .agenda-hero div .fecha-y-lugar {
       background-color: #264653;
       color: white;
       margin-top: 20px;
@@ -225,7 +248,14 @@ main i {
       text-align: center;
       font-size: 18px; }
     .agenda-hero div img {
+      height: auto;
       width: 100%; }
+
+h2 {
+  text-align: center;
+  color: #264653;
+  font-size: 40px;
+  margin-top: 20px; }
 
 .agenda-galeria-contenedor {
   margin: 30px 60px;
@@ -239,30 +269,27 @@ main i {
   .agenda-galeria-contenedor img {
     width: 100%; }
   .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto h2 {
-      font-size: 24px;
-      margin-top: 10px;
-      text-align: center; }
+    flex-direction: column; }
     .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto h3 {
-      font-size: 18px;
+      font-size: 24px;
+      text-align: center;
+      color: white; }
+    .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto .fecha-y-lugar-galeria {
+      font-size: 20px;
+      color: white;
       text-align: center; }
     .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto p {
-      font-size: 18px;
-      text-align: center; }
+      font-size: 16px;
+      text-align: center;
+      color: white; }
     .agenda-galeria-contenedor .agenda-galeria-contenedor-item-texto a {
+      font-size: 18px;
       text-decoration: none;
       color: white;
       text-align: center; }
 
 .suscripcion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  flex-direction: column; }
   .suscripcion .formulario-contenedor {
     width: 80%;
     background-color: #ebe6e6;
@@ -275,15 +302,17 @@ main i {
   background-color: #7a0414;
   border: solid #7a0414; }
   .btn-primary:hover {
-    background-color: #f4a261;
-    border: #f4a261; }
+    background-color: #e9c46a;
+    border: #e9c46a; }
 
 .redes-sociales {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  direction: column;
+  flex-wrap: wrap;
   background-color: #f4a261;
-  height: 55px;
-  align-items: center; }
+  height: 55px; }
   .redes-sociales a img {
     width: 50px;
     height: 50px; }
@@ -291,23 +320,28 @@ main i {
 .contacto {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  direction: column;
+  flex-wrap: wrap;
   background-color: #4f000b;
   color: white;
-  align-items: center;
-  padding: 30px; }
+  padding: 30px;
+  text-align: center; }
 
-/*!----MEDIA QUERY-----*/
+.contacto em {
+  font-size: 40px; }
+
 @media screen and (max-width: 1024px) {
   .blog-hero {
     flex-direction: column; }
-    .blog-hero .blog-hero-text h1 {
-      font-size: 40px; }
-    .blog-hero .blog-hero-text p {
-      font-size: 20px; }
-    .blog-hero img {
-      height: 40%; }
+  img {
+    height: 40%; }
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr); }
+  /*!----AGENDA-----*/
+  .agenda-hero h1 {
+    font-size: 34px;
+    color: violet; }
   .agenda-galeria-contenedor {
     margin: 30px 60px;
     grid-template-columns: repeat(2, 1fr);
@@ -320,11 +354,12 @@ main i {
     flex-direction: column; }
   .bienvenidos div {
     width: 90%; }
+  /*!----AGENDA-----*/
   .agenda-hero {
     flex-direction: column; }
-  .agenda-hero div {
-    height: 323px;
-    width: 70%; } }
+    .agenda-hero div {
+      height: 323px;
+      width: 80%; } }
 
 @media screen and (max-width: 660px) {
   .bienvenidos {
@@ -336,13 +371,17 @@ main i {
     font-size: 16px; }
   .grid-galeria {
     grid-template-columns: 1fr; }
+  /*!----AGENDA-----*/
   .agenda-galeria-contenedor {
     margin: 30px 60px;
     grid-template-columns: 1fr;
     gap: 40px; }
-  .agenda-hero div {
-    height: 323px;
-    width: 80%; } }
+  .agenda-hero {
+    flex-direction: column; }
+    .agenda-hero div h1 {
+      font-size: 30px; }
+    .agenda-hero div .fecha-y-lugar {
+      font-size: 26px; } }
 
 @media screen and (max-width: 500px) {
   .bxl-whatsapp {
@@ -350,6 +389,8 @@ main i {
   .mapa iframe {
     width: 100%;
     height: 100%; }
+  .contacto em {
+    font-size: 30px; }
   .bienvenidos div {
     width: 100%; }
   .bienvenidos-texto p {
@@ -359,5 +400,4 @@ main i {
   .agenda-hero div {
     width: 100%; }
   .agenda-hero div img {
-    height: 50%;
     object-fit: cover; } }

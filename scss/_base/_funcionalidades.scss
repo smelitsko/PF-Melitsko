@@ -3,6 +3,11 @@
 $color-principal: black;
 $color-secundario: #4f000b;
 $color-terciario: white;
+$color-cuaternario: #e9c46a;
+$color-quinario: #f4a261;
+$color-agenda: #264653;
+$color-agenda-light: #2a9d8f;
+$color-blog-pink: lightpink;
 
 //!LISTAS
 
@@ -28,9 +33,18 @@ $boton: (
 
 //!EXTENDS
 
-%flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+//!MIXINS
+
+@mixin flex($flex, $justify, $align, $direction, $wrap) {
+  display: $flex;
+  justify-content: $justify;
+  align-items: $align;
+  direction: $direction;
+  flex-wrap: $wrap;
+}

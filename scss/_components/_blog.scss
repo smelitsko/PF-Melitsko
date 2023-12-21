@@ -8,15 +8,20 @@
   .blog-hero-text {
     text-align: center;
     h1 {
-      font-size: 60px;
+      font-size: nth($font-size, 12);
     }
     h2 {
+      font-size: nth($font-size, 10);
       padding-top: 10px;
     }
     p {
-      font-size: 24px;
+      font-size: nth($font-size, 5);
       font-style: italic;
       padding-top: 10px;
+    }
+    .fecha-y-autor {
+      font-size: nth($font-size, 7);
+      font-style: normal;
     }
   }
   img {
@@ -32,8 +37,8 @@
   gap: 40px;
   .grid-item {
     display: flex;
-    background-color: lightpink;
-    color: white;
+    background-color: $color-blog-pink;
+    color: $color-terciario;
     img {
       width: 55%;
       object-fit: cover;
@@ -41,17 +46,24 @@
     .card-text {
       text-align: center;
       h2 {
-        font-size: 26px;
+        font-size: nth($font-size, 3);
+        color: $color-terciario;
       }
       h3 {
-        font-size: 20px;
+        font-size: nth($font-size, 6);
+        color: $color-terciario;
       }
       p {
         font-style: italic;
+        font-size: nth($font-size, 1);
+      }
+      .fecha-y-autor {
+        font-style: normal;
+        font-size: nth($font-size, 2);
       }
       a {
         text-decoration: none;
-        color: white;
+        color: $color-terciario;
         padding-top: 10px;
       }
     }
