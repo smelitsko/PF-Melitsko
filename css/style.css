@@ -452,6 +452,11 @@ footer .contacto {
   .bienvenidos div {
     width: 90%;
   }
+
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .agenda-hero {
     flex-direction: column;
   }
