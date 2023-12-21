@@ -1,4 +1,5 @@
 @media screen and (max-width: 1024px) {
+  /*!----BLOG-----*/
   .blog-hero {
     .blog-hero-text {
       h1 {
@@ -39,6 +40,8 @@
     flex-direction: column;
   }
 
+  /*!----MAIN/INDEX-----*/
+
   .quienes-somos .contenedor-imagenes {
     flex-direction: column;
   }
@@ -52,6 +55,7 @@
   /*!----BLOG-----*/
 
   .blog-hero {
+    margin: 0px;
     flex-direction: column;
     .blog-hero-text {
       h1 {
@@ -70,11 +74,14 @@
     }
     img {
       height: 40%;
+      width: 100%;
     }
   }
 
   .grid-galeria {
+    margin: 10px 0px;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   /*!----AGENDA-----*/
@@ -88,6 +95,8 @@
 }
 
 @media screen and (max-width: 660px) {
+  /*!----INDEX/MAIN-----*/
+
   .bienvenidos {
     flex-direction: column;
     width: 100%;
@@ -143,6 +152,9 @@
     padding: 0px;
     width: 100%;
   }
+
+  /*!----AGENDA-----*/
+
   .agenda-hero {
     div {
       width: 100%;
