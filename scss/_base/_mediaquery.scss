@@ -137,9 +137,10 @@
   .hero {
     background-image: none;
     img {
-      display: initial;
-      height: 100%;
-      width: auto;
+      display: none;
+      // display: initial;
+      // height: 100%;
+      // width: auto;
     }
   }
   .bxl-whatsapp {
