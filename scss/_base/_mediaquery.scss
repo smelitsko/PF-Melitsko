@@ -102,6 +102,12 @@
     width: 100%;
   }
 
+  /*!----LIBROS-----*/
+  .libros-hero {
+    div {
+      width: 100%;
+    }
+  }
   /*!----BLOG-----*/
 
   .grid-galeria {
@@ -134,26 +140,10 @@
 
 @media screen and (max-width: 500px) {
   /*!----INDEX/MAIN-----*/
-  // .hero {
-  //   background-image: none;
-  //   width: auto;
-  //   img {
-  //     display: initial;
-  //     height: 100%;
-  //     width: auto;
-  //   }
-  // }
   .hero {
-    text-align: center;
-    width: 100%;
     height: 300px;
     background-image: url("../img/hero-celular.jpg");
-    background-size: cover;
-    background-position: center;
     background-attachment: initial;
-    img {
-      display: none;
-    }
   }
 
   .bxl-whatsapp {
@@ -182,6 +172,7 @@
   /*!----LIBROS-----*/
   .libros-hero {
     margin: 0px;
+    width: 100%;
     h1 {
       font-size: nth($font-size, 11);
     }
