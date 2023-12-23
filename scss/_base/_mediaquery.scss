@@ -135,7 +135,11 @@
 @media screen and (max-width: 500px) {
   /*!----INDEX/MAIN-----*/
   .hero {
-    background-image: url("../img/hero-celular.jpg");
+    background-image: none;
+    img {
+      display: initial;
+      height: 100%;
+    }
   }
   .bxl-whatsapp {
     display: none;

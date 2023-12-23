@@ -44,6 +44,8 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  .hero img {
+    display: none; }
 
 .bienvenidos {
   padding: 20px; }
@@ -420,7 +422,10 @@ h2 {
 @media screen and (max-width: 500px) {
   /*!----INDEX/MAIN-----*/
   .hero {
-    background-image: url("../img/hero-celular.jpg"); }
+    background-image: none; }
+    .hero img {
+      display: initial;
+      height: 100%; }
   .bxl-whatsapp {
     display: none; }
   .mapa iframe {
