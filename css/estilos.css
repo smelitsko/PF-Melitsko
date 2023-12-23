@@ -419,6 +419,8 @@ h2 {
 
 @media screen and (max-width: 500px) {
   /*!----INDEX/MAIN-----*/
+  .hero {
+    background-image: url("../img/hero-celular.jpg"); }
   .bxl-whatsapp {
     display: none; }
   .mapa iframe {
