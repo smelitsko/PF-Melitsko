@@ -143,6 +143,18 @@
   //     width: auto;
   //   }
   // }
+  .hero {
+    text-align: center;
+    width: 100%;
+    background-image: url("../img/hero-celular.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    img {
+      display: none;
+    }
+  }
+
   .bxl-whatsapp {
     display: none;
   }
