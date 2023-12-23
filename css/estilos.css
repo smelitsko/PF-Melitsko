@@ -422,9 +422,12 @@ h2 {
 @media screen and (max-width: 500px) {
   /*!----INDEX/MAIN-----*/
   .hero {
-    background-image: none; }
+    background-image: none;
+    width: auto; }
     .hero img {
-      display: none; }
+      display: initial;
+      height: 100%;
+      width: auto; }
   .bxl-whatsapp {
     display: none; }
   .mapa iframe {
