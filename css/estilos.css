@@ -426,8 +426,7 @@ h2 {
     .hero img {
       display: initial;
       height: 100%;
-      width: auto;
-      object-fit: cover; }
+      width: auto; }
   .bxl-whatsapp {
     display: none; }
   .mapa iframe {
