@@ -101,9 +101,12 @@
 
 @media screen and (max-width: 660px) {
   /*!----INDEX/MAIN-----*/
+  .hero {
+    background-attachment: initial;
+  }
 
   .bienvenidos {
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
   }
 
@@ -144,8 +147,8 @@
 @media screen and (max-width: 500px) {
   /*!----INDEX/MAIN-----*/
   .hero {
-    height: 300px;
-    background-image: url("../img/hero-celular.jpg");
+    // height: 300px;
+    // background-image: url("../img/hero-celular.jpg");
     background-attachment: initial;
   }
 
