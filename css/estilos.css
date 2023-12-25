@@ -363,6 +363,8 @@ main i {
   footer .contacto {
     flex-direction: column; }
   /*!----MAIN/INDEX-----*/
+  .hero {
+    background-attachment: initial; }
   .quienes-somos .contenedor-imagenes {
     flex-direction: column; }
   .bienvenidos div {
@@ -397,12 +399,9 @@ main i {
 
 @media screen and (max-width: 660px) {
   /*!----INDEX/MAIN-----*/
-  .hero {
-    background-attachment: initial; }
   .bienvenidos {
     flex-direction: column-reverse;
-    width: 100%;
-    background: red; }
+    width: 100%; }
   /*!----LIBROS-----*/
   .libros-hero h1 {
     font-size: 50px; }
