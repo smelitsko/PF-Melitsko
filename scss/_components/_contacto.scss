@@ -1,6 +1,7 @@
 .suscripcion {
   @extend %flex-center;
   flex-direction: column;
+  text-align: center;
   .formulario-contenedor {
     width: 80%;
     background-color: rgb(235, 230, 230);
@@ -16,7 +17,7 @@
   background-color: #7a0414;
   border: solid #7a0414;
   &:hover {
-    background-color: $color-cuaternario;
-    border: $color-cuaternario;
+    background-color: $color-principal;
+    border: $color-principal;
   }
 }

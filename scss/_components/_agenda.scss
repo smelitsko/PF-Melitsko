@@ -1,37 +1,37 @@
 .agenda-hero {
-  @include flex(flex, space-around, center, row, wrap);
-  div {
-    background-color: rgb(233, 232, 232);
+  @extend %flex-center;
+  background-color: rgb(233, 232, 232);
+  height: auto;
+
+  .agenda-hero-texto {
     text-align: center;
-    height: 360px;
-    width: 50%;
+
     h1 {
-      height: 80px;
+      margin: 20px auto;
       background-color: $color-agenda;
       color: $color-terciario;
-      margin-top: 20px;
       font-size: nth($font-size, 10);
     }
     .fecha-y-lugar {
+      margin: 20px auto;
       background-color: $color-agenda;
       color: $color-terciario;
-      margin-top: 20px;
       font-size: nth($font-size, 7);
     }
     p {
-      margin: 10px 30px 10px 30px;
+      margin: 30px;
       background-color: rgb(233, 232, 232);
       text-align: center;
       font-size: nth($font-size, 2);
     }
-    img {
-      height: auto;
-      width: 100%;
-    }
+  }
+  img {
+    width: auto;
+    max-width: 60%;
   }
 }
 
-h2 {
+.agenda-h2 {
   text-align: center;
   color: $color-agenda;
   font-size: nth($font-size, 10);
@@ -67,10 +67,12 @@ h2 {
       color: $color-terciario;
       text-align: center;
     }
-    p {
+    .descripcion-del-evento {
       font-size: nth($font-size, 1);
       text-align: center;
       color: $color-terciario;
+      background: rgba(220, 220, 220, 0.15);
+      width: 90%;
     }
     a {
       font-size: nth($font-size, 2);
