@@ -1,26 +1,55 @@
-.nav-color {
-  background-color: $color-cuaternario;
-}
-
-.nav-link {
-  color: $color-secundario;
+.logo {
+  height: 75px;
+  width: 75px;
   transition-property: background-color;
   transition-duration: 2s;
   &:hover {
-    color: $color-terciario;
-    background-color: $color-secundario;
+    background-color: $gamuza;
+  }
+}
+
+.nav-color {
+  background-color: $color-barra;
+}
+
+.navbar-brand {
+  @extend %flex-center;
+  color: white;
+  :hover {
+    color: $color-barra-texto;
+  }
+}
+
+.navbar-toggler {
+  background-color: white;
+  color: white;
+  :hover {
+    background-color: $color-barra-texto;
+  }
+}
+
+.nav-link {
+  color: $color-barra-texto;
+  transition-property: background-color;
+  transition-duration: 2s;
+  font-size: nth($font-size, 3);
+  margin-right: 20px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color-barra-texto;
   }
 }
 
 .buscador-boton {
-  border: 1px solid $color-secundario;
-  color: $color-principal;
-  border-radius: 10px;
+  color: $color-barra-texto;
   transition-property: background-color;
   transition-duration: 2s;
+  font-size: nth($font-size, 3);
+  border-radius: 5px;
   &:hover {
-    background-color: $color-secundario;
-    color: $color-terciario;
+    color: #f1f0cc;
+    background-color: #8d775f;
   }
 }
 

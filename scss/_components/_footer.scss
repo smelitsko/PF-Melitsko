@@ -1,7 +1,7 @@
 .redes-sociales {
   @include flex(flex, space-evenly, center, column, wrap);
   background-color: #f4a261;
-  height: 55px;
+  padding: 20px;
 
   a {
     img {
@@ -13,7 +13,7 @@
 
 .contacto {
   @include flex(flex, space-evenly, center, column, wrap);
-  background-color: $color-secundario;
+  background-color: $black-bean;
   color: $color-terciario;
   padding: 30px;
   text-align: center;

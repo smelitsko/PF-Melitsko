@@ -1,8 +1,8 @@
 /*!---- BLOG HERO-----*/
 .blog-hero {
   height: auto;
-  margin: 30px 60px 30px 60px;
-  background-color: rgb(230, 229, 229);
+  margin: 30px 20px 30px 2%;
+  background-color: $ecru;
   @extend %flex-center;
 
   .blog-hero-text {
@@ -17,7 +17,7 @@
     p {
       font-size: nth($font-size, 4);
       font-style: italic;
-      padding-top: 10px;
+      padding: 10px 20px 10px 20px;
     }
     .fecha-y-autor {
       font-size: nth($font-size, 5);
@@ -39,7 +39,7 @@
   gap: 40px;
   .grid-item {
     display: flex;
-    background-color: $color-blog-pink;
+    background-color: $madder;
     color: $color-terciario;
     img {
       width: 40%;
@@ -47,6 +47,7 @@
     }
     .card-text {
       text-align: center;
+      margin-top: 20px;
       h2 {
         font-size: nth($font-size, 3);
         color: $color-terciario;
