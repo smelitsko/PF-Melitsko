@@ -9,10 +9,10 @@
   //  height: 580px;
   //margin: 30px;
   text-align: center;
-  background-color: $color-quinario;
+  background-color: $madder;
 
-  h1 {
-    font-size: nth($font-size, 12);
+  h2 {
+    font-size: nth($font-size, 7);
     margin-bottom: 30px;
     margin-top: 30px;
     color: $color-secundario;
@@ -34,8 +34,10 @@
     text-align: center;
     padding: 10px;
     font-size: nth($font-size, 7);
-    background-color: $color-secundario;
+    background-color: $black-bean;
     color: $color-terciario;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .productos-contenedor {
     @include flex(flex, space-around, center, row, wrap);
@@ -66,6 +68,7 @@
         font-size: nth($font-size, 2);
       }
       a {
+        margin-bottom: 20px;
         text-decoration: none;
         color: $color-terciario;
         background-color: $color-principal;

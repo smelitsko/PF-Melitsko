@@ -47,13 +47,27 @@
   .hero {
     background-attachment: initial;
   }
-  .quienes-somos .contenedor-imagenes {
-    flex-direction: column;
-  }
 
   .bienvenidos {
     div {
-      width: 90%;
+      flex-direction: column;
+      p {
+        width: 60%;
+      }
+    }
+    .revertir {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .nosotros {
+    .quienes-somos {
+      .fundador {
+        flex-direction: column;
+        div {
+          width: 60%;
+        }
+      }
     }
   }
 
@@ -105,8 +119,34 @@
   /*!----INDEX/MAIN-----*/
 
   .bienvenidos {
-    flex-direction: column-reverse;
-    width: 100%;
+    h2 {
+      font-size: nth($font-size, 11);
+    }
+    div {
+      p {
+        width: 70%;
+        font-size: nth($font-size, 4);
+      }
+    }
+  }
+
+  .nosotros {
+    .quienes-somos {
+      h2 {
+        font-size: nth($font-size, 11);
+      }
+      .fundador {
+        div {
+          width: 70%;
+          h3 {
+            font-size: nth($font-size, 5);
+          }
+          p {
+            font-size: nth($font-size, 4);
+          }
+        }
+      }
+    }
   }
 
   /*!----LIBROS-----*/
@@ -151,6 +191,37 @@
     background-attachment: initial;
   }
 
+  .bienvenidos {
+    h2 {
+      font-size: nth($font-size, 10);
+    }
+    div {
+      p {
+        width: 90%;
+        font-size: nth($font-size, 3);
+      }
+    }
+  }
+
+  .nosotros {
+    .quienes-somos {
+      h2 {
+        font-size: nth($font-size, 10);
+      }
+      .fundador {
+        div {
+          width: 90%;
+          h3 {
+            font-size: nth($font-size, 6);
+          }
+          p {
+            font-size: nth($font-size, 3);
+          }
+        }
+      }
+    }
+  }
+
   .bxl-whatsapp {
     display: none;
   }
@@ -162,16 +233,6 @@
 
   .contacto em {
     font-size: nth($font-size, 8);
-  }
-
-  .bienvenidos div {
-    width: 100%;
-  }
-
-  .bienvenidos-texto p {
-    font-size: 24px;
-    padding: 0px;
-    width: 100%;
   }
 
   /*!----LIBROS-----*/

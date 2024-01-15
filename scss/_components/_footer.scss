@@ -1,12 +1,12 @@
 .redes-sociales {
   @include flex(flex, space-evenly, center, column, wrap);
-  background-color: #f4a261;
+  background-color: $ecru;
   padding: 20px;
 
   a {
     img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
