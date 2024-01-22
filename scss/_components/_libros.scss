@@ -9,7 +9,7 @@
   //  height: 580px;
   //margin: 30px;
   text-align: center;
-  background-color: $madder;
+  background-color: $color-principal;
 
   h2 {
     font-size: nth($font-size, 7);
@@ -76,8 +76,8 @@
         font-size: nth($font-size, 2);
         transition: 1s ease-in;
         &:hover {
-          background-color: $color-secundario;
-          transform: scale(1.1);
+          background-color: rgba(63, 13, 18, 0.9);
+          transform: scale(0.95);
           border-radius: 10px;
         }
       }
