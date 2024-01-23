@@ -9,13 +9,15 @@
   //  height: 580px;
   //margin: 30px;
   text-align: center;
-  background-color: $color-principal;
 
   h2 {
+    padding: 10px;
     font-size: nth($font-size, 7);
-    margin-bottom: 30px;
-    margin-top: 30px;
-    color: $color-secundario;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: $color-terciario;
+    background-color: $black-bean;
+    width: 100%;
   }
   div {
     width: 100%;

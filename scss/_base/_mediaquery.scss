@@ -121,6 +121,12 @@
       max-width: 80%;
     }
   }
+
+  .agenda-galeria {
+    .agenda-galeria-contenedor {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -192,12 +198,14 @@
     }
   }
 
-  .agenda-galeria-contenedor {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 560px;
-    gap: 10px;
-    img {
-      width: 100%;
+  .agenda-galeria {
+    .agenda-galeria-contenedor {
+      grid-template-columns: 1fr;
+      grid-auto-rows: 560px;
+      gap: 10px;
+      img {
+        width: 100%;
+      }
     }
   }
 }
