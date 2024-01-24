@@ -2,10 +2,10 @@
   /*!----BLOG-----*/
   .blog-hero {
     .blog-hero-text {
-      h1 {
+      h2 {
         font-size: nth($font-size, 8);
       }
-      h2 {
+      h3 {
         font-size: nth($font-size, 7);
       }
       p {
@@ -15,9 +15,6 @@
       .fecha-y-autor {
         font-size: nth($font-size, 4);
       }
-    }
-    img {
-      height: 50%;
     }
   }
 
@@ -85,10 +82,10 @@
     margin: 0px;
     flex-direction: column;
     .blog-hero-text {
-      h1 {
+      h2 {
         font-size: nth($font-size, 7);
       }
-      h2 {
+      h3 {
         font-size: nth($font-size, 6);
       }
       p {
@@ -182,6 +179,14 @@
   }
 
   /*!----BLOG-----*/
+
+  .blog-hero {
+    .blog-hero-text {
+      h3 {
+        margin-top: 10px;
+      }
+    }
+  }
 
   .grid-galeria {
     grid-template-columns: 1fr;
